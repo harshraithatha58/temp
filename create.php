@@ -19,7 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $fathersName = $_POST['fathersName'];
             $address = $_POST['address'];
             $religion = $_POST['religion'];
-            $maretialStatus = $_POST['maretialStatus'];
+            $maritalStatus = $_POST['maritalStatus']; // Corrected variable name
             $mobileNumber = $_POST['mobileNumber'];
             $designation = $_POST['designation'];
             $duration = $_POST['duration'];
@@ -31,7 +31,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $fRelation = $_POST['fRelation'];
             $fAddharNumber = $_POST['fAddharNumber'];
             $fMobileNumber = $_POST['fMobileNumber'];
-            $sql = "INSERT INTO userdata (identification, name, fathers_name, address, religion, marital_status, mobile_number, designation, duration, route_used, place_visited_last_year, f_name, f_age, f_gender, f_relation, f_addhar_number, f_mobile_number, image_address) VALUES ('$identification', '$name', '$fathersName', '$address', '$religion', '$maretialStatus', '$mobileNumber', '$designation', '$duration', '$routeUsed', '$placeVisitedLastYear', '$fName', '$fAge', '$fGender', '$fRelation', '$fAddharNumber', '$fMobileNumber', '$filePath')";
+            $sql = "INSERT INTO userdata (identification, name, fathers_name, address, religion, marital_status, mobile_number, designation, duration, route_used, place_visited_last_year, f_name, f_age, f_gender, f_relation, f_addhar_number, f_mobile_number, image_address) VALUES ('$identification', '$name', '$fathersName', '$address', '$religion', '$maritalStatus', '$mobileNumber', '$designation', '$duration', '$routeUsed', '$placeVisitedLastYear', '$fName', '$fAge', '$fGender', '$fRelation', '$fAddharNumber', '$fMobileNumber', '$filePath')";
 
             if ($conn->query($sql) === TRUE) {
                 $response['success'] = true;
