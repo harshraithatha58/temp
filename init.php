@@ -1,7 +1,7 @@
 <?php
     $host = "localhost";
-    $user = "root";
-    $password = "";
+    $user = "lpgyluyj_API";
+    $password = "IWUj)OJISDspokA)(SPOAISkdj{p0a9";
     $db = "ia";
 
     $conn = mysqli_connect($host, $user, $password, $db);
